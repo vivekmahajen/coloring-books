@@ -29,13 +29,13 @@ export default function LandingPage() {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <Link href="/sign-up" className="bg-indigo-600 text-white text-lg px-8 py-3.5 rounded-xl font-semibold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">
-            Start creating for free
+            Start 7-day free trial
           </Link>
           <Link href="/pricing" className="bg-white text-gray-800 text-lg px-8 py-3.5 rounded-xl font-semibold border border-gray-200 hover:border-gray-300 transition">
             See pricing
           </Link>
         </div>
-        <p className="mt-4 text-sm text-gray-400">No credit card required · 10 free credits on signup</p>
+        <p className="mt-4 text-sm text-gray-400">No credit card required · 7-day free trial · Cancel anytime</p>
       </section>
 
       {/* How it works */}
@@ -143,9 +143,9 @@ export default function LandingPage() {
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to publish your first book?</h2>
         <p className="text-gray-500 mb-10 text-lg">Join thousands of creators generating passive income with AI books.</p>
         <Link href="/sign-up" className="bg-indigo-600 text-white text-lg px-10 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">
-          Get 10 free credits
+          Start 7-day free trial
         </Link>
-        <p className="mt-4 text-sm text-gray-400">No credit card required</p>
+        <p className="mt-4 text-sm text-gray-400">No credit card required · Cancel anytime</p>
       </section>
 
       {/* Footer */}

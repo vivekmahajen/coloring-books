@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { Check, Zap, Star } from "lucide-react";
 import { PLANS, TOPUP_PACKS, formatPrice } from "@/lib/stripe";
 
 export default function PricingPage() {
@@ -8,18 +8,56 @@ export default function PricingPage() {
       <nav className="border-b border-gray-100 px-6 py-4 flex items-center justify-between bg-white">
         <Link href="/" className="font-bold text-xl text-indigo-600">BookGen AI</Link>
         <Link href="/sign-up" className="bg-indigo-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-indigo-700 transition">
-          Get started
+          Start free trial
         </Link>
       </nav>
 
       <div className="max-w-5xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Simple, transparent pricing</h1>
-          <p className="text-xl text-gray-500">Pay per page generated. No hidden fees.</p>
-          <p className="text-sm text-gray-400 mt-2">1 credit = 1 generated page</p>
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
+            <Zap className="w-3.5 h-3.5" />
+            7-day free trial on all plans
+          </div>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Try everything free for 7 days</h1>
+          <p className="text-xl text-gray-500">No credit card required. Cancel anytime.</p>
+          <p className="text-sm text-gray-400 mt-2">After your trial: 1 credit = 1 generated page</p>
+        </div>
+
+        {/* Free trial hero card */}
+        <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-8 text-white mb-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <Star className="w-5 h-5 fill-white" />
+              <span className="font-bold text-lg">Free Trial — 7 Days</span>
+            </div>
+            <p className="text-green-100 text-sm leading-relaxed max-w-md">
+              Generate unlimited coloring books, storybooks, and activity books completely free.
+              No credit card needed. Your trial starts the moment you sign up.
+            </p>
+            <ul className="mt-4 space-y-1.5">
+              {[
+                "Unlimited page generation for 7 days",
+                "All three book types",
+                "KDP-ready PDF downloads",
+                "No credit card required",
+              ].map((f) => (
+                <li key={f} className="flex items-center gap-2 text-sm text-green-50">
+                  <Check className="w-4 h-4 shrink-0" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Link
+            href="/sign-up"
+            className="shrink-0 bg-white text-green-700 font-bold px-8 py-3.5 rounded-xl hover:bg-green-50 transition text-center"
+          >
+            Start free trial →
+          </Link>
         </div>
 
         {/* Plans */}
+        <p className="text-center text-sm text-gray-500 mb-6 font-medium">After your trial, choose a plan:</p>
         <div className="grid md:grid-cols-2 gap-6 mb-16">
           {PLANS.map((plan) => (
             <div
@@ -53,7 +91,7 @@ export default function PricingPage() {
                     : "bg-gray-100 text-gray-800 hover:bg-gray-200"
                 }`}
               >
-                Get started
+                Start free trial
               </Link>
             </div>
           ))}
@@ -83,11 +121,11 @@ export default function PricingPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Frequently asked questions</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
+              { q: "What's included in the free trial?", a: "Unlimited book generation for 7 full days. All book types, all styles, full PDF downloads — everything. No credit card needed." },
+              { q: "What happens after my trial ends?", a: "You'll need a paid plan or credit top-up to keep generating. Books you've already created are always yours to download." },
               { q: "What is a credit?", a: "1 credit = 1 generated page image. A 20-page coloring book costs 20 credits plus 1 for the cover." },
-              { q: "Can I sell what I generate?", a: "Yes. Full commercial rights are included in all plans. Publish on Amazon KDP, Etsy, or anywhere." },
+              { q: "Can I sell what I generate?", a: "Yes. Full commercial rights are included in all plans and during your trial. Publish on Amazon KDP, Etsy, or anywhere." },
               { q: "Do credits roll over?", a: "Monthly plan credits reset each billing period. Top-up pack credits never expire." },
-              { q: "What PDF format is output?", a: "Interior PDFs at 8.5×11\" (612×792 points) and a cover PDF with correct KDP dimensions including spine." },
-              { q: "Which AI model generates images?", a: "We use OpenAI DALL-E 3, the most capable model for stylistically consistent book illustration." },
               { q: "Can I cancel anytime?", a: "Yes, cancel your subscription at any time. You keep access until the end of your billing period." },
             ].map(({ q, a }) => (
               <div key={q} className="bg-gray-50 rounded-xl p-5">

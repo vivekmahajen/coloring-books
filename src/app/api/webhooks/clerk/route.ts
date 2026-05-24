@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Webhook } from "svix";
 import { db } from "@/lib/db";
+import { trialEndsAt, isAdminEmail } from "@/lib/access";
 
 export async function POST(req: NextRequest) {
   const body = await req.text();
@@ -27,10 +28,19 @@ export async function POST(req: NextRequest) {
   if (event.type === "user.created") {
     const { id, email_addresses } = event.data;
     const email = email_addresses[0]?.email_address ?? "";
+    const admin = isAdminEmail(email);
+
     await db.user.upsert({
       where: { clerkId: id },
       update: {},
-      create: { clerkId: id, email, credits: 10 },
+      create: {
+        clerkId: id,
+        email,
+        credits: 0,
+        // Admins skip the trial — they always have access
+        trialEndsAt: admin ? null : trialEndsAt(),
+        isAdmin: admin,
+      },
     });
   }
 
