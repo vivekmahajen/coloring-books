@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="white"/>
+
+  <!-- ===== GEOMETRIC OUTER BORDER ===== -->
+  <rect x="20" y="20" width="760" height="760" fill="none" stroke="black" stroke-width="4"/>
+  <rect x="35" y="35" width="730" height="730" fill="none" stroke="black" stroke-width="2"/>
+
+  <!-- Corner decorative diamonds -->
+  <polygon points="20,20 60,20 20,60" fill="none" stroke="black" stroke-width="3"/>
+  <polygon points="780,20 740,20 780,60" fill="none" stroke="black" stroke-width="3"/>
+  <polygon points="20,780 60,780 20,740" fill="none" stroke="black" stroke-width="3"/>
+  <polygon points="780,780 740,780 780,740" fill="none" stroke="black" stroke-width="3"/>
+
+  <!-- ===== OUTER CIRCLE RING ===== -->
+  <circle cx="400" cy="400" r="340" fill="none" stroke="black" stroke-width="3"/>
+  <circle cx="400" cy="400" r="320" fill="none" stroke="black" stroke-width="1.5"/>
+
+  <!-- Outer ring petal decorations (16 petals) -->
+  <g id="outer-petals">
+    <!-- Top -->
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(0,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(22.5,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(45,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(67.5,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(90,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(112.5,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(135,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(157.5,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(180,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(202.5,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(225,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(247.5,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(270,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(292.5,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(315,400,400)"/>
+    <ellipse cx="400" cy="72" rx="18" ry="30" fill="none" stroke="black" stroke-width="2.5" transform="rotate(337.5,400,400)"/>
+  </g>
+
+  <!-- ===== DIYA LAMPS (4 cardinal directions, inside outer ring) ===== -->
+  <!-- Top diya -->
+  <g transform="translate(400,115)">
+    <ellipse cx="0" cy="10" rx="28" ry="12" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-28,10 Q0,-5 28,10" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-8,0 Q0,-18 8,0" fill="none" stroke="black" stroke-width="2"/>
+    <!-- flame -->
+    <ellipse cx="0" cy="-22" rx="6" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="0" cy="-26" rx="3" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <!-- Bottom diya -->
+  <g transform="translate(400,685) rotate(180,0,10)">
+    <ellipse cx="0" cy="10" rx="28" ry="12" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-28,10 Q0,-5 28,10" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-8,0 Q0,-18 8,0" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="0" cy="-22" rx="6" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="0" cy="-26" rx="3" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <!-- Left diya -->
+  <g transform="translate(115,400) rotate(-90,0,10)">
+    <ellipse cx="0" cy="10" rx="28" ry="12" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-28,10 Q0,-5 28,10" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-8,0 Q0,-18 8,0" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="0" cy="-22" rx="6" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="0" cy="-26" rx="3" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <!-- Right diya -->
+  <g transform="translate(685,400) rotate(90,0,10)">
+    <ellipse cx="0" cy="10" rx="28" ry="12" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-28,10 Q0,-5 28,10" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-8,0 Q0,-18 8,0" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="0" cy="-22" rx="6" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="0" cy="-26" rx="3" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== GEOMETRIC STAR (8-pointed) ===== -->
+  <polygon points="400,160 420,380 610,280 420,380 640,400 420,420 610,520 420,420 400,640 380,420 190,520 380,420 160,400 380,380 190,280 380,380"
+           fill="none" stroke="black" stroke-width="2.5"/>
+
+  <!-- Inner geometric ring -->
+  <circle cx="400" cy="400" r="240" fill="none" stroke="black" stroke-width="2.5"/>
+  <circle cx="400" cy="400" r="225" fill="none" stroke="black" stroke-width="1"/>
+
+  <!-- ===== PEACOCKS (left and right, mirrored) ===== -->
+
+  <!-- LEFT PEACOCK -->
+  <g transform="translate(210,400)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="38" ry="28" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Neck -->
+    <path d="M15,-20 Q25,-55 18,-75" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Head -->
+    <circle cx="18" cy="-80" r="14" fill="none" stroke="black" stroke-width="2.5"/>
+    <!-- Beak -->
+    <path d="M28,-82 L40,-80 L28,-78" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Eye -->
+    <circle cx="22" cy="-82" r="3" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Crest feathers -->
+    <line x1="14" y1="-93" x2="8" y2="-108" stroke="black" stroke-width="2"/>
+    <line x1="18" y1="-94" x2="18" y2="-112" stroke="black" stroke-width="2"/>
+    <line x1="22" y1="-93" x2="28" y2="-108" stroke="black" stroke-width="2"/>
+    <circle cx="8" cy="-110" r="3" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="18" cy="-114" r="3" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="28" cy="-110" r="3" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Wing detail -->
+    <path d="M-30,-10 Q-55,-30 -45,-55 Q-20,-40 -10,-15" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-35,5 Q-60,-5 -58,20 Q-35,25 -20,10" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Tail feathers (fanned) -->
+    <path d="M-35,10 Q-90,30 -105,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-35,15 Q-88,55 -100,40" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-30,20 Q-75,75 -82,68" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-25,22 Q-55,90 -58,85" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-35,5 Q-88,-20 -98,-35" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-33,0 Q-82,-45 -88,-62" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-28,-8 Q-70,-70 -72,-88" fill="none" stroke="black" stroke-width="2.5"/>
+    <!-- Eyespots on tail feathers -->
+    <ellipse cx="-100" cy="2" rx="8" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-100" cy="2" rx="4" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+    <ellipse cx="-95" cy="42" rx="8" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-95" cy="42" rx="4" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+    <ellipse cx="-77" cy="70" rx="7" ry="9" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-77" cy="70" rx="3.5" ry="4.5" fill="none" stroke="black" stroke-width="1.5"/>
+    <ellipse cx="-93" cy="-38" rx="8" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-93" cy="-38" rx="4" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+    <ellipse cx="-67" cy="-88" rx="7" ry="9" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-67" cy="-88" rx="3.5" ry="4.5" fill="none" stroke="black" stroke-width="1.5"/>
+    <!-- Feet -->
+    <line x1="-10" y1="26" x2="-15" y2="45" stroke="black" stroke-width="2.5"/>
+    <line x1="10" y1="26" x2="5" y2="45" stroke="black" stroke-width="2.5"/>
+    <path d="M-20,45 L-15,45 L-8,52 M-15,45 L-15,52 M-15,45 L-10,52" fill="none" stroke="black" stroke-width="1.5"/>
+    <path d="M0,45 L5,45 L12,52 M5,45 L5,52 M5,45 L10,52" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+
+  <!-- RIGHT PEACOCK (mirrored) -->
+  <g transform="translate(590,400) scale(-1,1)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="38" ry="28" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Neck -->
+    <path d="M15,-20 Q25,-55 18,-75" fill="none" stroke="black" stroke-width="3"/>
+    <!-- Head -->
+    <circle cx="18" cy="-80" r="14" fill="none" stroke="black" stroke-width="2.5"/>
+    <!-- Beak -->
+    <path d="M28,-82 L40,-80 L28,-78" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Eye -->
+    <circle cx="22" cy="-82" r="3" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Crest feathers -->
+    <line x1="14" y1="-93" x2="8" y2="-108" stroke="black" stroke-width="2"/>
+    <line x1="18" y1="-94" x2="18" y2="-112" stroke="black" stroke-width="2"/>
+    <line x1="22" y1="-93" x2="28" y2="-108" stroke="black" stroke-width="2"/>
+    <circle cx="8" cy="-110" r="3" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="18" cy="-114" r="3" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="28" cy="-110" r="3" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Wing detail -->
+    <path d="M-30,-10 Q-55,-30 -45,-55 Q-20,-40 -10,-15" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-35,5 Q-60,-5 -58,20 Q-35,25 -20,10" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Tail feathers (fanned) -->
+    <path d="M-35,10 Q-90,30 -105,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-35,15 Q-88,55 -100,40" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-30,20 Q-75,75 -82,68" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-25,22 Q-55,90 -58,85" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-35,5 Q-88,-20 -98,-35" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-33,0 Q-82,-45 -88,-62" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M-28,-8 Q-70,-70 -72,-88" fill="none" stroke="black" stroke-width="2.5"/>
+    <!-- Eyespots on tail feathers -->
+    <ellipse cx="-100" cy="2" rx="8" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-100" cy="2" rx="4" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+    <ellipse cx="-95" cy="42" rx="8" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-95" cy="42" rx="4" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+    <ellipse cx="-77" cy="70" rx="7" ry="9" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-77" cy="70" rx="3.5" ry="4.5" fill="none" stroke="black" stroke-width="1.5"/>
+    <ellipse cx="-93" cy="-38" rx="8" ry="10" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-93" cy="-38" rx="4" ry="5" fill="none" stroke="black" stroke-width="1.5"/>
+    <ellipse cx="-67" cy="-88" rx="7" ry="9" fill="none" stroke="black" stroke-width="2"/>
+    <ellipse cx="-67" cy="-88" rx="3.5" ry="4.5" fill="none" stroke="black" stroke-width="1.5"/>
+    <!-- Feet -->
+    <line x1="-10" y1="26" x2="-15" y2="45" stroke="black" stroke-width="2.5"/>
+    <line x1="10" y1="26" x2="5" y2="45" stroke="black" stroke-width="2.5"/>
+    <path d="M-20,45 L-15,45 L-8,52 M-15,45 L-15,52 M-15,45 L-10,52" fill="none" stroke="black" stroke-width="1.5"/>
+    <path d="M0,45 L5,45 L12,52 M5,45 L5,52 M5,45 L10,52" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== LOTUS FLOWERS (top and bottom) ===== -->
+
+  <!-- TOP LOTUS -->
+  <g transform="translate(400,200)">
+    <!-- Outer petals -->
+    <path d="M0,0 Q-25,-45 0,-70 Q25,-45 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M0,0 Q-45,-30 -60,-55 Q-30,-20 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M0,0 Q45,-30 60,-55 Q30,-20 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M0,0 Q-50,-10 -70,-25 Q-40,5 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M0,0 Q50,-10 70,-25 Q40,5 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <!-- Inner petals -->
+    <path d="M0,0 Q-15,-30 0,-48 Q15,-30 0,0" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M0,0 Q-28,-18 -38,-35 Q-18,-12 0,0" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M0,0 Q28,-18 38,-35 Q18,-12 0,0" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Center -->
+    <circle cx="0" cy="-8" r="12" fill="none" stroke="black" stroke-width="2.5"/>
+    <circle cx="0" cy="-8" r="6" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Leaves -->
+    <path d="M-15,5 Q-40,15 -50,5 Q-30,0 -15,5" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M15,5 Q40,15 50,5 Q30,0 15,5" fill="none" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- BOTTOM LOTUS -->
+  <g transform="translate(400,600) scale(1,-1)">
+    <!-- Outer petals -->
+    <path d="M0,0 Q-25,-45 0,-70 Q25,-45 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M0,0 Q-45,-30 -60,-55 Q-30,-20 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M0,0 Q45,-30 60,-55 Q30,-20 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M0,0 Q-50,-10 -70,-25 Q-40,5 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <path d="M0,0 Q50,-10 70,-25 Q40,5 0,0" fill="none" stroke="black" stroke-width="2.5"/>
+    <!-- Inner petals -->
+    <path d="M0,0 Q-15,-30 0,-48 Q15,-30 0,0" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M0,0 Q-28,-18 -38,-35 Q-18,-12 0,0" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M0,0 Q28,-18 38,-35 Q18,-12 0,0" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Center -->
+    <circle cx="0" cy="-8" r="12" fill="none" stroke="black" stroke-width="2.5"/>
+    <circle cx="0" cy="-8" r="6" fill="none" stroke="black" stroke-width="2"/>
+    <!-- Leaves -->
+    <path d="M-15,5 Q-40,15 -50,5 Q-30,0 -15,5" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M15,5 Q40,15 50,5 Q30,0 15,5" fill="none" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- ===== CENTRAL LOTUS ===== -->
+  <g transform="translate(400,400)">
+    <!-- Large outer petals (8) -->
+    <path d="M0,0 Q-20,-55 0,-85 Q20,-55 0,0" fill="none" stroke="black" stroke-width="3"/>
+    <path d="M0,0 Q-20,-55 0,-85 Q20,-55 0,0" fill="none" stroke="black" stroke-width="3" transform="rotate(45)"/>
+    <path d="M0,0 Q-20,-55 0,-85 Q20,-55 0,0" fill="none" stroke="black" stroke-width="3" transform="rotate(90)"/>
+    <path d="M0,0 Q-20,-55 0,-85 Q20,-55 0,0" fill="none" stroke="black" stroke-width="3" transform="rotate(135)"/>
+    <path d="M0,0 Q-20,-55 0,-85 Q20,-55 0,0" fill="none" stroke="black" stroke-width="3" transform="rotate(180)"/>
+    <path d="M0,0 Q-20,-55 0,-85 Q20,-55 0,0" fill="none" stroke="black" stroke-width="3" transform="rotate(225)"/>
+    <path d="M0,0 Q-20,-55 0,-85 Q20,-55 0,0" fill="none" stroke="black" stroke-width="3" transform="rotate(270)"/>
+    <path d="M0,0 Q-20,-55 0,-85 Q20,-55 0,0" fill="none" stroke="black" stroke-width="3" transform="rotate(315)"/>
+
+    <!-- Inner petals (8, offset 22.5 deg) -->
+    <path d="M0,0 Q-12,-38 0,-58 Q12,-38 0,0" fill="none" stroke="black" stroke-width="2.5" transform="rotate(22.5)"/>
+    <path d="M0,0 Q-12,-38 0,-58 Q12,-38 0,0" fill="none" stroke="black" stroke-width="2.5" transform="rotate(67.5)"/>
+    <path d="M0,0 Q-12,-38 0,-58 Q12,-38 0,0" fill="none" stroke="black" stroke-width="2.5" transform="rotate(112.5)"/>
+    <path d="M0,0 Q-12,-38 0,-58 Q12,-38 0,0" fill="none" stroke="black" stroke-width="2.5" transform="rotate(157.5)"/>
+    <path d="M0,0 Q-12,-38 0,-58 Q12,-38 0,0" fill="none" stroke="black" stroke-width="2.5" transform="rotate(202.5)"/>
+    <path d="M0,0 Q-12,-38 0,-58 Q12,-38 0,0" fill="none" stroke="black" stroke-width="2.5" transform="rotate(247.5)"/>
+    <path d="M0,0 Q-12,-38 0,-58 Q12,-38 0,0" fill="none" stroke="black" stroke-width="2.5" transform="rotate(292.5)"/>
+    <path d="M0,0 Q-12,-38 0,-58 Q12,-38 0,0" fill="none" stroke="black" stroke-width="2.5" transform="rotate(337.5)"/>
+
+    <!-- Center circles -->
+    <circle cx="0" cy="0" r="32" fill="none" stroke="black" stroke-width="3"/>
+    <circle cx="0" cy="0" r="22" fill="none" stroke="black" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="black" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="5" fill="none" stroke="black" stroke-width="2"/>
+
+    <!-- Center dot pattern -->
+    <circle cx="0" cy="-17" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+    <circle cx="12" cy="-12" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+    <circle cx="17" cy="0" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+    <circle cx="12" cy="12" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="17" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+    <circle cx="-12" cy="12" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+    <circle cx="-17" cy="0" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+    <circle cx="-12" cy="-12" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== GEOMETRIC DIAMOND RING ===== -->
+  <!-- Alternating triangles forming a ring around center -->
+  <g transform="translate(400,400)">
+    <!-- 12 pointed star ring at r=145 -->
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(30)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(60)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(90)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(120)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(150)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(180)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(210)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(240)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(270)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(300)"/>
+    <polygon points="0,-145 12,-115 -12,-115" fill="none" stroke="black" stroke-width="2" transform="rotate(330)"/>
+
+    <!-- Connecting circle -->
+    <circle cx="0" cy="0" r="115" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== DECORATIVE DOTS PATTERN (between rings) ===== -->
+  <g transform="translate(400,400)">
+    <!-- Dots at r=275 (16 positions) -->
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(22.5)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(45)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(67.5)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(90)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(112.5)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(135)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(157.5)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(180)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(202.5)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(225)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(247.5)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(270)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(292.5)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(315)"/>
+    <circle cx="0" cy="-275" r="5" fill="none" stroke="black" stroke-width="2" transform="rotate(337.5)"/>
+
+    <!-- Diamond shapes at r=185 (8 positions) -->
+    <polygon points="0,-195 6,-185 0,-175 -6,-185" fill="none" stroke="black" stroke-width="2"/>
+    <polygon points="0,-195 6,-185 0,-175 -6,-185" fill="none" stroke="black" stroke-width="2" transform="rotate(45)"/>
+    <polygon points="0,-195 6,-185 0,-175 -6,-185" fill="none" stroke="black" stroke-width="2" transform="rotate(90)"/>
+    <polygon points="0,-195 6,-185 0,-175 -6,-185" fill="none" stroke="black" stroke-width="2" transform="rotate(135)"/>
+    <polygon points="0,-195 6,-185 0,-175 -6,-185" fill="none" stroke="black" stroke-width="2" transform="rotate(180)"/>
+    <polygon points="0,-195 6,-185 0,-175 -6,-185" fill="none" stroke="black" stroke-width="2" transform="rotate(225)"/>
+    <polygon points="0,-195 6,-185 0,-175 -6,-185" fill="none" stroke="black" stroke-width="2" transform="rotate(270)"/>
+    <polygon points="0,-195 6,-185 0,-175 -6,-185" fill="none" stroke="black" stroke-width="2" transform="rotate(315)"/>
+  </g>
+
+  <!-- ===== FIREWORK BURSTS (corners, inside outer border) ===== -->
+  <!-- Top-left firework -->
+  <g transform="translate(100,100)">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="21" y2="-21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="30" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="21" y2="21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="30" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-21" y2="21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-30" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-21" y2="-21" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="-32" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="23" cy="-23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="32" cy="0" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="23" cy="23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="32" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-23" cy="23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-32" cy="0" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-23" cy="-23" r="4" fill="none" stroke="black" stroke-width="2"/>
+  </g>
+  <!-- Top-right firework -->
+  <g transform="translate(700,100)">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="21" y2="-21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="30" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="21" y2="21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="30" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-21" y2="21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-30" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-21" y2="-21" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="-32" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="23" cy="-23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="32" cy="0" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="23" cy="23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="32" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-23" cy="23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-32" cy="0" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-23" cy="-23" r="4" fill="none" stroke="black" stroke-width="2"/>
+  </g>
+  <!-- Bottom-left firework -->
+  <g transform="translate(100,700)">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="21" y2="-21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="30" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="21" y2="21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="30" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-21" y2="21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-30" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-21" y2="-21" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="-32" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="23" cy="-23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="32" cy="0" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="23" cy="23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="32" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-23" cy="23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-32" cy="0" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-23" cy="-23" r="4" fill="none" stroke="black" stroke-width="2"/>
+  </g>
+  <!-- Bottom-right firework -->
+  <g transform="translate(700,700)">
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="21" y2="-21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="30" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="21" y2="21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="30" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-21" y2="21" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-30" y2="0" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-21" y2="-21" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="-32" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="23" cy="-23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="32" cy="0" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="23" cy="23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="0" cy="32" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-23" cy="23" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-32" cy="0" r="4" fill="none" stroke="black" stroke-width="2"/>
+    <circle cx="-23" cy="-23" r="4" fill="none" stroke="black" stroke-width="2"/>
+  </g>
+
+  <!-- ===== BORDER DECORATIONS - small flowers along edges ===== -->
+  <!-- Top edge small diyas -->
+  <g transform="translate(200,45)">
+    <ellipse cx="0" cy="0" rx="15" ry="7" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M-15,0 Q0,-8 15,0" fill="none" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="-18" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(600,45)">
+    <ellipse cx="0" cy="0" rx="15" ry="7" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M-15,0 Q0,-8 15,0" fill="none" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="-18" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(200,755)">
+    <ellipse cx="0" cy="0" rx="15" ry="7" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M-15,0 Q0,-8 15,0" fill="none" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="-18" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(600,755)">
+    <ellipse cx="0" cy="0" rx="15" ry="7" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M-15,0 Q0,-8 15,0" fill="none" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="-18" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(45,200) rotate(-90)">
+    <ellipse cx="0" cy="0" rx="15" ry="7" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M-15,0 Q0,-8 15,0" fill="none" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="-18" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(45,600) rotate(-90)">
+    <ellipse cx="0" cy="0" rx="15" ry="7" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M-15,0 Q0,-8 15,0" fill="none" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="-18" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(755,200) rotate(90)">
+    <ellipse cx="0" cy="0" rx="15" ry="7" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M-15,0 Q0,-8 15,0" fill="none" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="-18" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(755,600) rotate(90)">
+    <ellipse cx="0" cy="0" rx="15" ry="7" fill="none" stroke="black" stroke-width="2"/>
+    <path d="M-15,0 Q0,-8 15,0" fill="none" stroke="black" stroke-width="2"/>
+    <line x1="0" y1="-8" x2="0" y2="-18" stroke="black" stroke-width="1.5"/>
+    <circle cx="0" cy="-20" r="3" fill="none" stroke="black" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== TITLE TEXT ===== -->
+  <text x="400" y="790" text-anchor="middle" font-family="serif" font-size="18" font-style="italic" fill="black" stroke="none">Happy Diwali</text>
+
+</svg>
