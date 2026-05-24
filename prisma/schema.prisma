@@ -1,0 +1,78 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id               String        @id @default(cuid())
+  clerkId          String        @unique
+  email            String        @unique
+  credits          Int           @default(0)
+  stripeCustomerId String?       @unique
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+  books            Book[]
+  transactions     Transaction[]
+}
+
+model Book {
+  id         String     @id @default(cuid())
+  userId     String
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type       BookType
+  title      String
+  theme      String
+  style      String
+  status     BookStatus @default(PENDING)
+  pageCount  Int
+  pdfUrl     String?
+  coverUrl   String?
+  coverTitle String?
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  pages      Page[]
+}
+
+model Page {
+  id         String   @id @default(cuid())
+  bookId     String
+  book       Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  pageNumber Int
+  prompt     String
+  imageUrl   String?
+  createdAt  DateTime @default(now())
+}
+
+model Transaction {
+  id              String          @id @default(cuid())
+  userId          String
+  user            User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  creditsDelta    Int
+  type            TransactionType
+  stripePaymentId String?
+  description     String?
+  createdAt       DateTime        @default(now())
+}
+
+enum BookType {
+  COLORING
+  STORYBOOK
+  ACTIVITY
+}
+
+enum BookStatus {
+  PENDING
+  GENERATING
+  READY
+  FAILED
+}
+
+enum TransactionType {
+  PURCHASE
+  SPEND
+  REFUND
+  BONUS
+}
